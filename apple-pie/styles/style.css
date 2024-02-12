@@ -22,3 +22,53 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+.appleHeading {
+  color: white;
+  background: center no-repeat url("../images/apple-pie.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+hr {
+  width: 85%;
+}
+
+p {
+  text-align: left;
+}
+
+.recipeImg {
+  min-width: 300px;
+  max-width: 500px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+section {
+  margin: 30px 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: "- ";
+}
+
+ol {
+  counter-reset: list;
+  list-style: none;
+}
+
+ol li:before {
+  content: counter(list)") ";
+  counter-increment: list;
+}
